@@ -665,7 +665,7 @@
                         <li>This website is deployed on <b>S3</b>.</li>
                         <li>I created a <b>CloudFront</b> distribution to require HTTPS to access this website.</li>
                         <li>I purchased a custom domain name with <b>Route 53</b> and pointed it to my CloudFront distribution.</li>
-                        <li>I created a  counter (made from Javascript) that points to <b>DynamoDB</b>. The counter retrieves and updates in a DynamoDB database.</li>
+                        <li>I created a vistor counter (made from Javascript) that points to a <b>DynamoDB</b> table. The counter retrieves and updates in a DynamoDB database. This was feasible by creating an API Gateway and a Lambda function to create, delete, retrieve items from the DynamoDb.</li>
                         
 
 
