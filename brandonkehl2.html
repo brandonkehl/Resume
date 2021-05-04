@@ -539,7 +539,7 @@
         <div class="l-Wrapper l-Wrapper--reset@sm-down">
             <ul class="u-pullRight u-hidden@xs-down">
                 <li>
-                    <a class="Navbar-btn Navbar-btn--main" href="https://s3.amazonaws.com/brandonkehl.com/Brandon-Kehl.pdf">
+                    <a class="Navbar-btn Navbar-btn--main" href="https://s3.amazonaws.com/brandonkehl.com/Brandon.Kehl.pdf">
                         Download
                         <span>(pdf)</span>
                     </a>
@@ -552,9 +552,9 @@
                 <li>
                     <a href="https://github.com/brandonkehl">GitHub</a>
                 </li>
-                <li>
+                     <!-- <li>
                     <a href="LINK TO BLOG POST">Homelab</a>
-                </li>
+                     </li> -->
                 <li>
                 </li>
             </ul>
@@ -664,11 +664,10 @@
                     <ul> 
                         <li>This website is deployed on <b>S3</b>.</li>
                         <li>I created a <b>CloudFront</b> distribution to require HTTPS to access this website.</li>
-                        <li>I purchased a custom domain name with <b>Route 53</b> and pointed it to my CloudFront distribution.</li>
-                        <li>I created a vistor counter (made from Javascript) that points to a <b>DynamoDB</b> table. The counter retrieves and updates in a DynamoDB database. This was feasible by creating an API Gateway and a Lambda function to create, delete, retrieve items from the DynamoDb.</li>
-                        
-
-
+                        <li>I purchased a custom domain name with <b>Route 53</b> and pointed it to my new <b>CloudFront</b> distribution.</li>
+                        <li>The visitor counter (made from Javascript) points to a <b>DynamoDB</b> table. The counter retrieves and updates in a <b>DynamoDB</b> database. To do this I had to create an <b>API Gateway</b> and a <b>Lambda</b> function to create, delete, retrieve items from the <b>DynamoDb</b> table.</li>
+                        <li>I utilized <b>CodePipeline</b> to sync with my GitHub repository as a demonstration of <b>CI/CD</b>.</li>
+                        <li>There will be more to come!</li>
                     </ul>
                 </div>
             </div>
