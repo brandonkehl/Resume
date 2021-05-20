@@ -701,7 +701,7 @@
         <div class="l-Footer">
             <div class="l-Footer-col">
 
-            <h2> Hello! You are Vistor Number:</h2> <h1 id = "count">0</h1>
+            <h2> Hello! You are Vistor Number:</h2> <span id = "visits">0</h1>
             </div>
 
             <div class="l-Footer-col Contact">
@@ -713,19 +713,16 @@
     
 
 
-    <script>
-      const countBK = document.getElementById('count');
+<script>
 
-updateVisitCount()
+async function getVisitors(){
+const response = await fetch('https://1xdilp5rt1.execute-api.us-east-1.amazonaws.com');
+const data = await response.json();
+const {visitorID} = data;
 
-function updateVisitCount(){
-  fetch('https://api.countapi.xyz/update/kehlbrandon.com/bkehl?amount=1')
-      .then(res => res.json())
-      .then(res => {
-              countBK.innerHTML = res.value;
-    
-  })
+document.getElementById('visits').textContent = visitorID;
 }
+getVisitors();
 </script>
 </body>
 
