@@ -711,9 +711,17 @@
 
 
 <script>
+        fetch("https://ouit3m47r9.execute-api.us-east-1.amazonaws.com/createVisits", {
+            method: "POST",
+            body: JSON.stringify({
+            }),
+        })
         fetch(' https://ouit3m47r9.execute-api.us-east-1.amazonaws.com/getVisits')
             .then(response => response.json())
             .then(data => {document.getElementById('visits').innerText = data})
+
+
+
 
 </script>    
 
